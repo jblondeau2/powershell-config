@@ -5,7 +5,7 @@ function gowww {cd C:\wamp\www}
 function genEntity {C:\wamp\bin\php\php5.3.5\php.exe app/console doctrine:generate:entity}
 function genBundle {C:\wamp\bin\php\php5.3.5\php.exe app/console generate:bundle}
 function routerDebug {C:\wamp\bin\php\php5.3.5\php.exe app/console router:debug}
-function schemaUpdate {C:\wamp\bin\php\php5.3.5\php.exe app/console doctrine:schema:update}
+function schemaUpdate {C:\wamp\bin\php\php5.3.5\php.exe app/console doctrine:schema:update --force}
 function schemaCreate {C:\wamp\bin\php\php5.3.5\php.exe app/console doctrine:schema:create}
 
 Set-Alias -name scc -value runScc
