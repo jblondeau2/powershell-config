@@ -1,8 +1,15 @@
-function runscc {C:\wamp\bin\php\php5.3.5\php.exe app/console cache:clear}
-function runsccdev {C:\wamp\bin\php\php5.3.5\php.exe app/console cache:clear --env=dev}
-function runsccprod {C:\wamp\bin\php\php5.3.5\php.exe app/console cache:clear --env=prod}
+function runScc {C:\wamp\bin\php\php5.3.5\php.exe app/console cache:clear}
+function runSccDev {C:\wamp\bin\php\php5.3.5\php.exe app/console cache:clear --env=dev}
+function runSccProd {C:\wamp\bin\php\php5.3.5\php.exe app/console cache:clear --env=prod}
 function gowww {cd C:\wamp\www}
-Set-Alias -name scc -value runscc
-Set-Alias -name sccdev -value runsccdev
-Set-Alias -name sccprod -value runsccprod
-Set-Alias -name go-www -value gowww
+function genEntity {C:\wamp\bin\php\php5.3.5\php.exe app/console doctrine:generate:entity}
+function genBundle {C:\wamp\bin\php\php5.3.5\php.exe app/console generate:bundle}
+function routerDebug {C:\wamp\bin\php\php5.3.5\php.exe app/console router:debug}
+
+Set-Alias -name scc -value runScc
+Set-Alias -name scc-dev -value runSccDev
+Set-Alias -name scc-prod -value runSccProd
+Set-Alias -name go-www -value goWww
+Set-Alias -name generate-entity -value genEntity
+Set-Alias -name generate-bundle -value genBundle
+Set-Alias -name router-debug -value routerDebug
