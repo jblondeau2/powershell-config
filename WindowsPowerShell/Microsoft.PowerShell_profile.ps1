@@ -7,13 +7,4 @@ function genBundle {C:\wamp\bin\php\php5.3.5\php.exe app/console generate:bundle
 function routerDebug {C:\wamp\bin\php\php5.3.5\php.exe app/console router:debug}
 function schemaUpdate {C:\wamp\bin\php\php5.3.5\php.exe app/console doctrine:schema:update --force}
 function schemaCreate {C:\wamp\bin\php\php5.3.5\php.exe app/console doctrine:schema:create}
-
-Set-Alias -name scc -value runScc
-Set-Alias -name scc-dev -value runSccDev
-Set-Alias -name scc-prod -value runSccProd
-Set-Alias -name go-www -value goWww
-Set-Alias -name genE -value genEntity
-Set-Alias -name genB -value genBundle
-Set-Alias -name routD -value routerDebug
-Set-Alias -name schU -value schemaUpdate
-Set-Alias -name schC -value schemaCreate
+function getcomposer {curl -s http://getcomposer.org/installer | php}
